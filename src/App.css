@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+p {
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 6rem;
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  color: rgb(10, 10, 10);
+}
+.App:before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  background: url("./assets/background1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.wrapper {
+  max-width: 700px;
+  max-height: 700px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.App .top {
+  width: 100%;
+  margin: 1rem auto;
+}
+.App .description {
+  position: relative;
+  transform-origin: 0 0;
+  padding-left: 70%;
+}
+.App .description p {
+  transform: rotate(269deg);
+}
+.App .bottom {
+  margin-top: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+  font-size: 0.7rem;
+  border-radius: 12px;
+  background-color: rgb(167, 164, 164);
+  cursor: pointer;
+}
+.App .bold {
+  font-weight: bold;
+}
+.App .search {
+  text-align: center;
+  padding: 0.7rem;
+}
+.App input {
+  /* padding: 0.7rem 1.5rem; */
+  height: 50px;
+  width: 250px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 25px;
+  border: 1px solid rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  margin-top: 5 px;
+}
+::placeholder {
+  color: rgb(209, 184, 184);
+  margin-top: 30px;
+}
+ 
+  .App .bottom {
+    padding: 0.8rem;
+    font-size: 0.4rem;
+    border-radius: 14px;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+
